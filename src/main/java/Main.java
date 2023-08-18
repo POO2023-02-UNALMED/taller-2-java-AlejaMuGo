@@ -52,19 +52,18 @@ class Auto {
         boolean iguales = true;
         for (int i = 0; i < asientos.length; i++) {
             if (asientos[i] != null) {
-                if (asientos[i].registro == registro && asientos[i].registro == motor.registro) {
-                    iguales = true;
-                } else {
+                if (asientos[i].registro != registro && asientos[i].registro != motor.registro) {
                     iguales = false;
+                    break;
                 }
             }
         }
         if (iguales == true){
-            return "Auto original";
-        }
+            return "Auto original";}
         else {
             return "Las piezas no son originales";
         }
+
     }
 }
 
