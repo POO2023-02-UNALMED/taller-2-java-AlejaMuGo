@@ -52,7 +52,7 @@ class Auto {
         boolean iguales = true;
         for (int i = 0; i < asientos.length; i++) {
             if (asientos[i] != null) {
-                if ((asientos[i].registro == registro) && (asientos[i].registro == motor.registro) && (registro == motor.registro)) {
+                if (asientos[i].registro == registro && asientos[i].registro == motor.registro) {
                     iguales = true;
                 } else {
                     iguales = false;
